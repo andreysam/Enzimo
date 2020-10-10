@@ -1,0 +1,252 @@
+body {
+    background-color: gray;
+}
+.app {
+    width: 1000px;
+    height: 951px;
+    margin: 50px auto;
+    background-color: white;
+}
+
+.head {
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 10px 13px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #538CFF; /* Цвет посещенных ссылок */
+}
+a:active {
+  color: #2D72FF; /* Цвет активных ссылок */
+}
+
+/*-----------Заболевание
+---------------------------------*/
+
+.disease-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.disease-element {
+    /*width: 199px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;*/
+    transition: box-shadow .3s ease-in-out;
+    width: 199px;
+    height: 130px;
+    left: 200px;
+    top: 80px;
+    border-radius: 6.13878px;
+}
+
+.disease-element:hover {
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, .15);
+}
+
+.disease-element.marked {
+    border: 2px solid crimson;
+}
+
+.disease-element-img {
+    height: 52px;
+    width: 52px;
+    padding: 12px 0 0 13px;
+}
+
+.disease-element-name {
+
+    font-size: 17px;
+    line-height: 20px;
+    font-family: Arial Narrow;
+    color: white;
+    font-weight: 800;
+    padding:  21px 15px;
+}
+
+
+/*-----------Врачи
+---------------------------------*/
+.doctor-container{
+    margin: 45px auto;
+    height: 250px;
+    width: 967px;
+}
+.doctor-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+.doctor-element {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+
+
+    height: 70px;
+    width: 309px;
+    left: 0px;
+    right: 658px;
+    top: 0px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(35, 35, 35, 0.25);
+    border-radius: 10px;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.doctor-element:hover {
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, .15);
+}
+
+.doctor-element.marked {
+    border: 2px solid crimson;
+}
+
+.doctor-element-img {
+    height: 52px;
+    width: 52px;
+    padding: 12px 0 0 13px;
+}
+
+.doctor-element-name {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    color: #042D48;
+}
+
+.docot-element-desc {
+
+    padding-top: 8px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+
+    /* typography / secondary */
+    color: #919599;
+}
+
+.doctor-element-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.doctor-link {
+    padding-top: 15px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 25px;
+    text-align: right;
+    letter-spacing: 0.03em;
+    color: #538CFF;
+
+    transition: color 1s ease-in-out;
+}
+
+a:hover {
+    color: #2D72FF;
+}
+
+
+
+/*-----------Клиники
+---------------------------------*/
+
+.clinics-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.clinics-element {
+
+    width: 310px;
+    height: 175px;
+    box-shadow: 1px 2px 4px rgba(35, 35, 35, 0.15);
+    border-radius: 23px 60px 23px 23px;
+
+
+    
+}
+
+.clinics-element-circle {   
+    position: absolute;
+    padding-left: 220px;
+}
+
+.clinics-element-img{
+    size: 80px;
+    padding: 35px 0 10px 40px;
+}
+
+.clinics-element-name {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: left; 
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+
+    padding-left: 40px;
+
+
+}
+
+.clinics-head {
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    font-variant: small-caps;
+    color: #303436;
+    text-shadow: 1px 2px 4px rgba(35, 35, 35, 0.35);
+    padding:0 0 20px 10px;
+    
+}
+
+
+
+
+.footer-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 55px;
+
+}
+
+.footer-element {
+    padding-left: 25px;
+}
