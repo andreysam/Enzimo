@@ -1,10 +1,10 @@
 body {
-    background-color: gray;
+    background-color: white;
 }
 .app {
-    width: 1000px;
+    max-width: 1000px;
     height: 951px;
-    margin: 50px auto;
+    margin: auto auto;
     background-color: white;
 }
 
@@ -23,26 +23,49 @@ a {
 }
 
 a:visited {
-    color: #538CFF; /* Цвет посещенных ссылок */
+    color: #538CFF; 
 }
 a:active {
-  color: #2D72FF; /* Цвет активных ссылок */
+  color: #2D72FF; 
 }
+
+.disease-container::-webkit-scrollbar {
+    width: 0px;
+  }
+  .clinics-container::-webkit-scrollbar {
+    width: 0px;
+  }
 
 /*-----------Заболевание
 ---------------------------------*/
 
+.disease-area {
+    height: 130px;
+    position: relative;
+}
+
+.disease-container {
+    
+    overflow: auto;
+    width: 1000px;
+    scroll-behavior: smooth;
+ 
+}
+
+
+ 
+
+
 .disease-list {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: row;  
+    justify-content: center;
+    width: max-content;
 }
 
 .disease-element {
-    /*width: 199px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;*/
+    margin-left: 15px;
+    display:inline-block;
     transition: box-shadow .3s ease-in-out;
     width: 199px;
     height: 130px;
@@ -76,19 +99,34 @@ a:active {
 }
 
 
+.disease-back-button {
+    transform: rotate(180deg);
+    position: absolute;
+    top: 40px;
+    z-index: 1000;
+}
+
+.disease-next-button {
+    position: absolute;
+    top:40px;
+    left: 950px;
+    z-index: 1000;
+}
+
 /*-----------Врачи
 ---------------------------------*/
 .doctor-container{
     margin: 45px auto;
-    height: 250px;
-    width: 967px;
 }
 .doctor-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px,1fr));
+    grid-gap: 15px;
+    justify-content: center;
+    align-content: flex-start;
+   
 }
+
 .doctor-element {
     display: flex;
     flex-direction: row;
@@ -97,7 +135,7 @@ a:active {
 
 
     height: 70px;
-    width: 309px;
+   
     left: 0px;
     right: 658px;
     top: 0px;
@@ -112,14 +150,12 @@ a:active {
     box-shadow: 2px 2px 0 rgba(0, 0, 0, .15);
 }
 
-.doctor-element.marked {
-    border: 2px solid crimson;
-}
-
 .doctor-element-img {
-    height: 52px;
-    width: 52px;
-    padding: 12px 0 0 13px;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+
 }
 
 .doctor-element-name {
@@ -132,7 +168,7 @@ a:active {
     color: #042D48;
 }
 
-.docot-element-desc {
+.doctor-element-desc {
 
     padding-top: 8px;
     font-family: Arial;
@@ -140,10 +176,7 @@ a:active {
     font-weight: normal;
     font-size: 13px;
     line-height: 15px;
-    /* identical to box height */
     letter-spacing: 0.03em;
-
-    /* typography / secondary */
     color: #919599;
 }
 
@@ -178,19 +211,26 @@ a:hover {
 /*-----------Клиники
 ---------------------------------*/
 
+.clinics-area {
+    height: 175px;
+        position: relative;
+    }
+    
 .clinics-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    width: max-content;
 }
 
 .clinics-element {
-
+    margin-left: 15px;
+    display:inline-block;
     width: 310px;
     height: 175px;
     box-shadow: 1px 2px 4px rgba(35, 35, 35, 0.15);
     border-radius: 23px 60px 23px 23px;
-
+    position: relative;
 
     
 }
@@ -235,8 +275,29 @@ a:hover {
     
 }
 
+.clinics-container {
+    overflow: auto;
+    width: 1000px;
+    scroll-behavior: smooth;
+}
 
 
+.clinics-back-button {
+    transform: rotate(180deg);
+    position: absolute;
+    top:60px;
+    z-index: 1000;
+}
+
+.clinics-next-button {
+    position: absolute;
+    top:60px;
+    left: 950px;
+    z-index: 1000;
+}
+
+/*-----------Footer
+---------------------------------*/
 
 .footer-list{
     display: flex;
@@ -247,6 +308,24 @@ a:hover {
 
 }
 
+.footer-circle {
+    background: white;
+    border-radius: 50%;
+    color: #fff;
+    height: 48px;
+    position: relative;
+    width: 48px;
+    box-shadow: 1px 2px 4px rgba(35, 35, 35, 0.35);;
+  }
+
 .footer-element {
-    padding-left: 25px;
+    display: flex;
+    align-items: center;  
+    justify-content: center;  
 }
+
+.footer-padding {
+    padding: 11px 0 0 15px;
+}
+
+
