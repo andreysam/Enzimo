@@ -22,7 +22,8 @@ body {
     box-shadow: inset 1px 1px 4px rgba(35, 35, 35, 0.15);
     border-radius: 53px;
     width: 309px;
-    height: 39px;
+    height: 39px;        
+    margin-right: 10px;
 }
 
 .search-container {
