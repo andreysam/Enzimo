@@ -104,21 +104,6 @@ body {
    
 }
 
-.border {
-    margin-top: 6px;
-    margin-bottom: 6px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid rgba(196, 196, 196, 0.34);
-    box-sizing: border-box;
-    border-radius: 2px;
-    width: 265px;
-    
-} 
-.rait-element {
-    padding-right: 5%;
-}
-
 .doctor-post {
     font-family: Arial;
     font-style: normal;
@@ -132,9 +117,25 @@ body {
 .doctor-rating {
     display: flex;
     flex-direction: row;
+    margin-bottom: 2px;
 
 }
 
+.rait-element {
+    padding-left: 5%;    
+}
+
+.border {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgba(196, 196, 196, 0.34);
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 265px;
+    
+} 
 .doctor-name {
     margin-top: 6px;
     font-family: Arial;
@@ -147,8 +148,6 @@ body {
 
     color: #042D48;
 }
-
-
 
 
 .price-containter {
