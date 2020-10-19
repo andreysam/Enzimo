@@ -1,0 +1,203 @@
+body {
+    background-color: white;
+}
+.app-doctor {
+    max-width: 1000px;
+    height: 951px;
+    margin: auto auto;
+    background-color: white;
+}
+
+.head-doctor {
+    margin-top: 33px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.search {
+    background: #FFFFFF;
+    box-shadow: inset 1px 1px 4px rgba(35, 35, 35, 0.15);
+    border-radius: 53px;
+    width: 309px;
+    height: 39px;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.input-search {
+    margin:10px;
+    outline: none;
+    border: none;    
+}
+
+
+
+
+::placeholder { 
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+
+    color: rgba(145, 149, 153, 0.5);
+   }
+
+
+.back-button {
+    transform: rotate(180deg);
+
+}
+
+
+
+/*-----------Врачи
+---------------------------------*/
+
+ .doc-container {
+    background: #FFFFFF;
+    box-shadow: 1px 2px 4px rgba(73, 73, 73, 0.15);
+    border-radius: 10px;    
+}  
+
+.doctor-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px,1fr));
+    grid-gap: 22px;
+    justify-content: center;
+    align-content: center;   
+}
+
+
+.doc-info-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.avatar {
+    height: 77px;
+    width: 77px;
+    border-radius: 100px;
+
+}
+
+.doctor-spec {
+    margin-top: 6px;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+    align-items: center;
+   
+}
+
+.border {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgba(196, 196, 196, 0.34);
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 265px;
+    
+} 
+.rait-element {
+    padding-right: 5%;
+}
+
+.doctor-post {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #818991;
+}
+
+.doctor-rating {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.doctor-name {
+    margin-top: 6px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.045em;
+
+    color: #042D48;
+}
+
+
+
+
+.price-containter {
+    margin: 10px;
+}
+
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+.price-element {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+    align-items: center;
+    
+
+}
+
+
+.price-services {
+    
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 128px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 130%;  
+
+    color: #919599;
+    
+
+}
+
+.price {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 130%;
+    color: #042D48;
+}
+
+
+
+
+

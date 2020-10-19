@@ -58,15 +58,13 @@ function Footer(props) {
     </div>
     )
 }
-    
 
-
-
-const app = (
-  <div className="app">
+export default function Index() {
+  return (
+    <div className="app">
     <div className="head">
       <div className="logo">
-        <img src="img/head/logo.svg" alt="Enzimo"/>
+        <img src="../img/head/logo.svg" alt="Enzimo"/>
       </div>
       <div>
         <img src="img/head/search.svg" alt="search"/>
@@ -107,7 +105,7 @@ const app = (
          <Doctor doctor={{ name: "Стаматолог терапевт", img: "img/doctor/9.svg", desc:"Специалист общего профиля"}}/>
        </div>
 
-       <div className="doctor-link"><a href="#">Посмотреть все ></a></div>
+       <div className="doctor-link"><a href="doctors">Посмотреть все ></a></div>
      </div>
      
      
@@ -137,6 +135,5 @@ const app = (
      </div>
      
  </div>
-)
-
-ReactDOM.render(app, document.getElementById("root"))
+  )
+}
