@@ -63,9 +63,9 @@ export default function Index() {
   return (
     <div className="app">
     <div className="head">
-      <div className="logo">
+      
         <img src="../img/head/logo.svg" alt="Enzimo"/>
-      </div>
+      
       <div>
         <img src="img/head/search.svg" alt="search"/>
         <img src="img/head/qest.svg" alt="qest"/>
@@ -105,12 +105,12 @@ export default function Index() {
          <Doctor doctor={{ name: "Стаматолог терапевт", img: "img/doctor/9.svg", desc:"Специалист общего профиля"}}/>
        </div>
 
-       <div className="doctor-link"><a href="doctors">Посмотреть все ></a></div>
+  <div className="doctor-link"><a href="doctors">Посмотреть все {'>'}</a></div>
      </div>
      
      
      
-     <div className="clinics-head">КЛИНИКИ</div>
+     <div className="clinics-head"><a href="clinics">КЛИНИКИ</a></div>
      
      <div className="clinics-area">
       <div className="clinics-container" id="clinics-slider">
