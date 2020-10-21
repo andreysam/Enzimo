@@ -1,10 +1,7 @@
-import DoctorsArray from '../components/doctors-site/DoctorsArray.js';
-import Doctors from '../components/doctors-site/Doctors.js';
+import ClinicArray from '../components/clinics-site/ClinicArray.js';
+import Clinic from '../components/clinics-site/Clinic.js';
 
-
-
-
-export default function docs() {
+export default function clinics() {
     return (
         <div className='app-doctor'>
 
@@ -19,11 +16,10 @@ export default function docs() {
             </div>
 
             <div className="doctor-list">
-                {DoctorsArray.map(item => <Doctors doc={item.doc} price={item.price}/>)}
+                {ClinicArray.map(item => <Clinic clinic={item.clinic} geo={item.geo}/>)}
             </div>
         </div>
        
     )
 }
-
 

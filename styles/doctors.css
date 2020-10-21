@@ -1,3 +1,4 @@
+
 body {
     background-color: white;
 }
@@ -6,6 +7,7 @@ body {
     height: 951px;
     margin: auto auto;
     background-color: white;
+    min-width: 309px;
 }
 
 .head-doctor {
@@ -24,6 +26,13 @@ body {
     width: 309px;
     height: 39px;        
     margin-right: 10px;
+    margin-left: 10px;
+}
+
+@media (max-width: 440px) and (min-width: 0px) { 
+    .search{
+        width: 60%;
+    }
 }
 
 .search-container {
@@ -34,13 +43,10 @@ body {
 }
 
 .input-search {
-    margin:10px;
+    margin: 10px;
     outline: none;
     border: none;    
 }
-
-
-
 
 ::placeholder { 
     font-family: Arial;
@@ -49,10 +55,8 @@ body {
     font-size: 15px;
     line-height: 17px;
     letter-spacing: 0.03em;
-
     color: rgba(145, 149, 153, 0.5);
-   }
-
+}
 
 .back-button {
     transform: rotate(180deg);
@@ -64,32 +68,44 @@ body {
 /*-----------Врачи
 ---------------------------------*/
 
+.doctor-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(309px,1fr));
+    grid-gap: 22px;
+    justify-content: center;
+    align-content: center;   
+}
+
  .doc-container {
     background: #FFFFFF;
     box-shadow: 1px 2px 4px rgba(73, 73, 73, 0.15);
     border-radius: 10px;    
 }
 
-.doc-container:hover {
-    box-shadow: 0px 0px 4px rgba(73, 73, 73, 0.5);
-}  
-
-.doctor-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(270px,1fr));
-    grid-gap: 22px;
-    justify-content: center;
-    align-content: center;   
-}
-
-
 .doc-info-element {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
+.doc-container:hover {
+    box-shadow: 0px 0px 4px rgba(73, 73, 73, 0.5);
+}  
 
+.border {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgba(196, 196, 196, 0.34);
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 265px;
+}
+
+.price-containter {
+    margin: 10px;
 }
 
 .avatar {
@@ -131,17 +147,6 @@ body {
     padding-left: 5%;    
 }
 
-.border {
-    margin-top: 6px;
-    margin-bottom: 6px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid rgba(196, 196, 196, 0.34);
-    box-sizing: border-box;
-    border-radius: 2px;
-    width: 265px;
-    
-} 
 .doctor-name {
     margin-top: 6px;
     font-family: Arial;
@@ -154,12 +159,6 @@ body {
 
     color: #042D48;
 }
-
-
-.price-containter {
-    margin: 10px;
-}
-
 
 .icon {
     width: 20px;

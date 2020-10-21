@@ -1,5 +1,4 @@
-
-const doctors = [
+const DoctorsArray = [
     {
         doc: {
             avatar: "img/doctors/doctor.png",
@@ -120,4 +119,4 @@ const doctors = [
 ];
 
 
-export default doctors;
+export default DoctorsArray;
