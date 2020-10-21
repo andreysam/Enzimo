@@ -4,6 +4,7 @@ body {
 }
 .app-doctor {
     max-width: 1000px;
+    width: 100%;
     height: 951px;
     margin: auto auto;
     background-color: white;

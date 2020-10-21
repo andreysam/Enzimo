@@ -2,16 +2,18 @@ body {
     background-color: white;
 }
 .app {
-    max-width: 1000px;
+    max-width: 1000px; 
+    width: 100%;
     height: 951px;
     margin: auto auto;
     background-color: white;
 }
 
 .head {
-     display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
 }
 
 .logo {
@@ -47,13 +49,10 @@ a:active {
 .disease-container {
     
     overflow: auto;
-    width: 1000px;
+    width: 100%;
     scroll-behavior: smooth;
  
 }
-
-
- 
 
 
 .disease-list {
@@ -109,7 +108,7 @@ a:active {
 .disease-next-button {
     position: absolute;
     top:40px;
-    left: 950px;
+    right: 0px;
     z-index: 1000;
 }
 
@@ -123,21 +122,13 @@ a:active {
     grid-template-columns: repeat(auto-fill, minmax(270px,1fr));
     grid-gap: 15px;
     justify-content: center;
-    align-content: flex-start;   
+    align-content: center;   
 }
 
 .doctor-element {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-
-
-
-    height: 70px;
-   
-    left: 0px;
-    right: 658px;
-    top: 0px;
 
     background: #FFFFFF;
     box-shadow: 0px 1px 4px rgba(35, 35, 35, 0.25);
@@ -276,7 +267,7 @@ a:hover {
 
 .clinics-container {
     overflow: auto;
-    width: 1000px;
+    width: 100%;
     scroll-behavior: smooth;
 }
 
@@ -291,7 +282,7 @@ a:hover {
 .clinics-next-button {
     position: absolute;
     top:60px;
-    left: 950px;
+    right: 0px;
     z-index: 1000;
 }
 

@@ -9,7 +9,7 @@ export default function clinics() {
                 <a href="/"><img className="back-button" src="img/arrow.svg"/></a>
                     <div className="search-container">
                         <div className="search">
-                            <input className="input-search" placeholder="Поиск по докторам"></input> 
+                            <input className="input-search" placeholder="Поиск по клиникам"></input> 
                         </div>
                         <img src="img/search.svg"/>  
                     </div>
