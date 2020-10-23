@@ -1,5 +1,8 @@
-import ClinicArray from '../components/clinics-site/ClinicArray.js';
-import Clinic from '../components/clinics-site/Clinic.js';
+import ClinicsArray from '../components/ClinicsArray.js';
+import Card from '../components/Card.js';
+
+
+
 
 export default function clinics() {
     return (
@@ -16,8 +19,15 @@ export default function clinics() {
             </div>
 
             <div className="doctor-list">
-                {ClinicArray.map(item => <Clinic clinic={item.clinic} geo={item.geo}/>)}
-            </div>
+            {ClinicsArray.map(item => <Card 
+                    photo={item.photo} 
+                    title={item.title}
+                    info={item.info}
+                    rating={item.rating} 
+                    prices={item.prices}
+                    
+                />)}
+            </div>      
         </div>
        
     )

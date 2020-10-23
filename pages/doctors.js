@@ -1,6 +1,5 @@
-import DoctorsArray from '../components/doctors-site/DoctorsArray.js';
-import Doctors from '../components/doctors-site/Doctors.js';
-
+import DoctorsArray from '../components/DoctorsArray.js';
+import Card from '../components/Card.js';
 
 
 
@@ -19,7 +18,16 @@ export default function docs() {
             </div>
 
             <div className="doctor-list">
-                {DoctorsArray.map(item => <Doctors doc={item.doc} price={item.price}/>)}
+                {DoctorsArray.map(item => <Card 
+                    photo={item.photo} 
+                    title={item.title}
+                    info={item.info}
+                    rating={item.rating} 
+                    prices={item.prices}
+                    
+                />)}
+                
+
             </div>
         </div>
        
