@@ -11,10 +11,16 @@ function Card (props) {
                 rating={props.rating}
                 />
             <div className="border">            
-            </div>            
-            <CardFooter     
-                prices={props.prices}
-                />
+            </div>  
+
+
+            {props.prices.map((item, index) => <CardFooter 
+            key={index}
+
+            ico={item.ico} 
+            name={item.name}
+            price={item.price}
+        />)}
                      
             </div>
     );

@@ -12,7 +12,9 @@ function CardHeader (props) {
                 <div className="doctor-post">
                    {props.info}
                 </div>
-                <CardRait rating={props.rating}/>
+                <div className="doctor-rating">
+                    <CardRait rating={props.rating}/>
+                </div>
             </div>
         </div>
     );
