@@ -2,8 +2,6 @@ import ClinicsArray from '../components/ClinicsArray.js';
 import Card from '../components/Card.js';
 
 
-
-
 export default function clinics() {
     return (
         <div className='app-doctor'>
@@ -19,7 +17,9 @@ export default function clinics() {
             </div>
 
             <div className="doctor-list">
-            {ClinicsArray.map(item => <Card 
+            {ClinicsArray.map((item, index) => <Card 
+                    key={index}
+
                     photo={item.photo} 
                     title={item.title}
                     info={item.info}

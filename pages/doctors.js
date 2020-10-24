@@ -18,7 +18,9 @@ export default function docs() {
             </div>
 
             <div className="doctor-list">
-                {DoctorsArray.map(item => <Card 
+                {DoctorsArray.map((item, index) => <Card 
+                    key={index}
+
                     photo={item.photo} 
                     title={item.title}
                     info={item.info}

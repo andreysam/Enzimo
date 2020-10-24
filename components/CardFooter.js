@@ -1,9 +1,10 @@
 import Footer from './Footer.js';
 
 function CardFooter (props) {
-    console.log(props)
     return (
-        props.prices.map(item => <Footer 
+        props.prices.map((item, index) => <Footer 
+            key={index}
+
             ico={item.ico} 
             name={item.name}
             price={item.price}
