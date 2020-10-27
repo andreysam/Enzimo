@@ -1,0 +1,210 @@
+
+
+.doc-info-element-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.avatar-head {
+    margin-top: 12px;
+    height: 220px;
+    width: 220px;
+    border-radius: 100px;
+
+}
+
+.doctor-list-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;   
+    overflow: auto;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.doctor-list-area {
+    position: relative;
+}
+
+.doc-info-element-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin-left: 27px;
+    padding: 5px 30px;
+
+}
+
+
+/**********Title***************/
+.about-title {
+    display: flex;
+    flex-direction: row;
+
+    margin: 72px 0 75px 15px;
+}
+.about-photo {
+    margin-right: 40px;
+}
+
+.photo-doc {
+    width: 220px;
+    height: 220px;
+    border-radius: 150px;
+}
+
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.description-text {
+    width: 304px;
+    margin-bottom: 23px;
+}
+
+.title-text {
+    
+font-family: Arial;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 34px;
+letter-spacing: 0.03em;
+color: #042D48;
+
+}
+
+.info-text {
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;    
+    letter-spacing: 0.03em;    
+    color: #919599;
+}
+
+.button-text {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.input-button {
+    width: 181px;
+    height: 40px;
+    background: #F9B161;
+    
+    box-shadow: 0px 0px 5px rgba(35, 35, 35, 0.25);
+    border-radius: 40px;
+    margin-right: 27px;
+}
+
+.output-button {
+    width: 181px;
+    height: 40px;
+    background: #FFFFFF;
+
+    box-shadow: 0px 0px 5px rgba(35, 35, 35, 0.25);
+    border-radius: 40px;
+    
+}
+
+.input-text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+    margin: 10px 0px;
+
+}
+.output-text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    /* typography / yellow */
+
+    color: #C26700;
+    margin: 10px 0px;
+}
+
+
+
+
+
+/************About Doc****************/
+
+
+
+.about-doc-container {
+    background: #FFFFFF;
+    box-shadow: 1px 1px 5px rgba(35, 35, 35, 0.1);
+    border-radius: 10px;
+
+    padding: 30px;
+    margin-bottom: 45px;
+}
+
+.about-doc {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 2vw;    
+    justify-content: center;
+    align-content: center;
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: #042D48;
+}
+
+.about-doc-text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+
+    /* typography / secondary */
+
+    color: #919599;
+}
+
+.about-doc-title {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    color: #042D48;
+
+    padding-bottom: 48px;
+}

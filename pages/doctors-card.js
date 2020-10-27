@@ -4,6 +4,8 @@ import Card from '../components/Card.js';
 
 
 export default function docs() {
+
+
     return (
         <div className='app-doctor'>
 
@@ -21,6 +23,8 @@ export default function docs() {
                 {DoctorsArray.map((item, index) => <Card 
                     key={index}
 
+                    id={index} 
+
                     photo={item.photo} 
                     title={item.title}
                     info={item.info}
@@ -35,5 +39,3 @@ export default function docs() {
        
     )
 }
-
-

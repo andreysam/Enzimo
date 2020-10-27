@@ -1,4 +1,3 @@
-import Footer from './Footer.js';
 
 function CardFooter (props) {
     return (

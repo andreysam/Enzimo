@@ -105,12 +105,12 @@ export default function Index() {
          <Doctor doctor={{ name: "Стаматолог терапевт", img: "img/doctor/9.svg", desc:"Специалист общего профиля"}}/>
        </div>
 
-  <div className="doctor-link"><a href="doctors">Посмотреть все {'>'}</a></div>
+  <div className="doctor-link"><a href="doctors-card">Посмотреть все {'>'}</a></div>
      </div>
      
      
      
-     <div className="clinics-head"><a href="clinics">КЛИНИКИ</a></div>
+     <div className="clinics-head"><a href="clinics-card">КЛИНИКИ</a></div>
      
      <div className="clinics-area">
       <div className="clinics-container" id="clinics-slider">

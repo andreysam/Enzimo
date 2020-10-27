@@ -3,8 +3,9 @@ import CardRait from './CardRait.js';
 
 function CardHeader (props) {
     return (
-        <div  className="doc-info-element">
+        <div  className={props.className}>
             <CardPhoto photo={props.photo}/>
+            <div className="doc-text">
             <div className="doctor-name">
                {props.title}
             </div>
@@ -14,6 +15,7 @@ function CardHeader (props) {
                 </div>
                 <div className="doctor-rating">
                     <CardRait rating={props.rating}/>
+                </div>
                 </div>
             </div>
         </div>

@@ -20,6 +20,8 @@ export default function clinics() {
             {ClinicsArray.map((item, index) => <Card 
                     key={index}
 
+                    id={index}
+
                     photo={item.photo} 
                     title={item.title}
                     info={item.info}
