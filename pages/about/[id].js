@@ -1,6 +1,3 @@
-
-import { YMaps, Map, Placemark } from "react-yandex-maps";
-
 import DoctorsArray from "../../components/DoctorsArray";
 import ClinicsArray from "../../components/ClinicsArray";
 import CardHeader from "../../components/CardHeader";
@@ -28,27 +25,25 @@ export default function About_doctors(props) {
           experience={props.doctor.about.experience}
         />
         <AboutClinic 
+          title={props.clinic.title}          
           phone={props.clinic.about.phone}
           adres={props.clinic.about.adres}
           email={props.clinic.about.email}
         />  
-        {/* <CardHeader   className="doc-info-element-header"        
-            photo={"../"+props.doctor.photo}
-            title={props.doctor.title}
-            info={props.doctor.info}
-            /> */}
-            <div className="doctor-list-area">
-            
-        <div className="doctor-list-footer">
-          {DoctorsArray.map((item) =>
-          <CardHeader  className="doc-info-element-footer doc-container"
-            title={item.title}
-            info={item.info}
-            rating={item.rating}
-            photo={"../"+item.photo}
-          />)}
-          
-        </div>
+        <div className="doctor-list-area">
+          <div className="about-doc-title">
+            Коллеги
+          </div>
+            <div className="doctor-list-footer">
+              {DoctorsArray.map((item,index) =>
+              <CardHeader  className="doc-info-element-footer doc-container"
+                key={index}
+                title={item.title}
+                info={item.info}
+                rating={item.rating}
+                photo={"../"+item.photo}
+              />)}
+            </div>
         </div>
       </div>
 
@@ -64,21 +59,3 @@ export async function getServerSideProps(context) {
 
   return { props: { doctor, clinic } }
 }
-
-
-
-// export default function About_doctors(props) {
-//     return (
-
-//         <div>
-//         <YMaps query={{ load: "package.full" }}>
-//             <Map defaultState={mapData} width={"900px"}>
-//                 {coordinates.map(item => <Placemark geometry={item} options={option}/>)}
-                
-//             </Map>
-//         </YMaps>
-//         </div>
-//     );
-// }
-
-
