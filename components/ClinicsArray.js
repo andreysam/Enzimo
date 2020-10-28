@@ -12,6 +12,9 @@ const ClinicsArray = [
                     price: ""
                 }],        
             about: {
+                ogrn: "000000000",
+                inn: "000000000",
+                site: "enzimo.ru",
                 phone: "89057357190",
                 adres: "г.Ставрополь, ул.Шпаковская 85Б",
                 email: "enzimo@mail.ru"

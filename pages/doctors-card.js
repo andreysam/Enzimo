@@ -25,6 +25,8 @@ export default function docs() {
 
                     id={index} 
 
+                    link={'/about/[id]'}
+
                     photo={item.photo} 
                     title={item.title}
                     info={item.info}

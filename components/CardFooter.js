@@ -5,7 +5,7 @@ function CardFooter (props) {
              <div className="price-element">                
                 <div>
                 <img className="icon"
-                    src={props.ico}
+                    src={"../"+props.ico}
                     alt={props.title}
                 />
                 </div>

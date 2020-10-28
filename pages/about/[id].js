@@ -16,19 +16,51 @@ export default function About_doctors(props) {
         <Head 
           photo={"../"+props.doctor.photo}
           title={props.doctor.title}
-          info={props.doctor.info}
+          
+          info={
+            <div className="info-text">
+                        {props.doctor.info}
+                </div>
+           
+           }
+
+          buttons={
+            <div className="button-text">
+                        <div className="input-button">
+                            <div className="input-text">
+                                Запись на приём
+                            </div>
+                        </div>
+                        <div className="output-button">
+                            <div className="output-text">
+                                Вызов на дом
+                            </div>
+                        </div>
+                    </div>
+          }
         />
         <AboutDoc 
           education={props.doctor.about.education}
           skill={props.doctor.about.skill}
           place={props.doctor.about.place}
           experience={props.doctor.about.experience}
+
+          
+          
         />
         <AboutClinic 
-          title={props.clinic.title}          
-          phone={props.clinic.about.phone}
-          adres={props.clinic.about.adres}
-          email={props.clinic.about.email}
+          title={props.clinic.title} 
+
+          about= {
+          <div className="about-doc">
+                    <div>Телефон:</div>
+                    <div className="about-doc-text">{props.clinic.about.phone} </div>
+                    <div>Адресс:</div>
+                    <div className="about-doc-text">{props.clinic.about.adres}</div>
+                    <div>E-mail:</div>
+                    <div className="about-doc-text">{props.clinic.about.email}</div>
+                </div>
+          }
         />  
         <div className="doctor-list-area">
           <div className="about-doc-title">

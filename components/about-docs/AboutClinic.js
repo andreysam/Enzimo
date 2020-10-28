@@ -8,13 +8,12 @@ function AboutClinic (props) {
             <div className="about-doc-title">
                 О клинике
             </div>
-            <div className="about-doc">
-                <div>Телефон:</div>
-                <div className="about-doc-text">{props.phone}</div>
-                <div>Адресс:</div>
-                <div className="about-doc-text">{props.adres}</div>
-                <div>E-mail:</div>
-                <div className="about-doc-text">{props.email}</div>
+            <div className="about-doc-table">
+                {props.about}
+                
+                {props.info}
+                <div className="border-footer"></div>
+                {props.footer}
             </div>
             <YaMap 
                 title={props.title}

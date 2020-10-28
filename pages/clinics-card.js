@@ -2,7 +2,7 @@ import ClinicsArray from '../components/ClinicsArray.js';
 import Card from '../components/Card.js';
 
 
-export default function clinics() {
+export default function clinics(props) {
     return (
         <div className='app-doctor'>
 
@@ -22,6 +22,7 @@ export default function clinics() {
 
                     id={index}
 
+                    link={'/about-clinic/[id]'}
                     photo={item.photo} 
                     title={item.title}
                     info={item.info}

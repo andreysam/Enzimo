@@ -14,22 +14,9 @@ function Head(props) {
                     <div className="title-text">
                         {props.title}
                     </div>
-                    <div className="info-text">
-                        {props.info}
-                    </div>
+                    {props.info}
                 </div>
-                    <div className="button-text">
-                        <div className="input-button">
-                            <div className="input-text">
-                                Запись на приём
-                            </div>
-                        </div>
-                        <div className="output-button">
-                            <div className="output-text">
-                                Вызов на дом
-                            </div>
-                        </div>
-                    </div>
+                    {props.buttons}
                 </div>
         </div>
     );

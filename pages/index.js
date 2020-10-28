@@ -1,6 +1,5 @@
 
 
-
 //Функция  заполнения листа заболеваний
 function Disease(props) {
   return (

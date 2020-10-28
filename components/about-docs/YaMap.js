@@ -19,7 +19,7 @@ const mapData = {
 
   function YaMap (props) {
       return (
-            <div>                
+            <div className="yamap">                
                 <YMaps query={{ load: "package.full" }}>
                     <Map defaultState={mapData} width={"100%"}>
                         {ClinicsArray.map((item, index) => <Placemark 
